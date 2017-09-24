@@ -1,4 +1,4 @@
 # AlfaBank
 test task 
 
-Bsearch function & SQL request
+Bsearch function & SQL query
