@@ -1,0 +1,2 @@
+SELECT DISTINCT a.name, b.position
+FROM (SELECT name FROM employee) AS a  CROSS JOIN (SELECT position FROM employee) AS b WHERE employee.department_id = name_of_department;
