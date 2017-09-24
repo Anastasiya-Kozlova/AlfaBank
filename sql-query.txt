@@ -1,2 +1,6 @@
-SELECT DISTINCT a.name, b.position
+1)SELECT DISTINCT a.name, b.position
 FROM (SELECT name FROM employee) AS a  CROSS JOIN (SELECT position FROM employee) AS b WHERE employee.department_id = name_of_department;
+
+2) SELECT b.name
+FROM (SELECT chief_ID, salary FROM employee) AS a  CROSS JOIN (SELECT ID, name, salary FROM employee) AS b 
+WHERE a.chief_ID = b.ID AND b.salary = 2*avg(a.salary) GROUP BY b.name;
